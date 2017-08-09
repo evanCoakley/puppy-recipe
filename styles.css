@@ -5,17 +5,24 @@
 .wrapper {
     min-height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
+    margin-top: 75px;
 }
 
-.container {
+input {
+    height: 40px;
+    width: 20%;
+}
+
+.clients {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 75px 0 0 0;
 }
 
 .row {
     border: solid;
     height: 25em;
     flex-basis: 23%;
-    margin: 10px 0;
+    margin: 30px 12px;
 }
