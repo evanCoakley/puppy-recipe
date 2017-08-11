@@ -14,25 +14,35 @@ input.addEventListener("keydown", function (event) {
             for (i = 0; i < response.data.results.length; i++) {
                 let data = response.data.results[i];
                 if (data.thumbnail === '') {
-                    const dogchow =
-                        `<img src="/Users/evanlcoakley/The-Iron-Yard/Week-Four/Week4Day2/Day2Project/17290460-hungry-dog-with-knife-and-fork-for-dinner-Stock-Photo-dog-food.jpg">`
-                    document.querySelector(".boxes").innerHTML += dogchow;
-                    console.log(data);
-                } else {
-                    const dogchow =
-
-                        `<img src ="${data.thumbnail}">`
-                    document.querySelector(".boxes").innerHTML += dogchow;
+                    data.thumbnail = "./17290460-hungry-dog-with-knife-and-fork-for-dinner-Stock-Photo-dog-food.jpg";
                 }
-
-
-
+                const dogchow =
+                    `<a href="${data.href}"><img src ="${data.thumbnail}"><p>${data.title}</p></a>`
+                document.querySelector(".boxes").innerHTML += dogchow;
 
             }
-        });
-
+            // dataDisplay.addEventListener("click", function (event) {
+            //     if (event.keyCode === enterKeyCode) {
+            //         dataDisplay.innerHTML = '';
+            //         let url = "http://recipepuppyproxy.herokuapp.com/api/?q=" + input.value;
+            //         for (i = 0; i < response.data.results.length; i++) {
+            //             let href = response.data.results[i];
+            //             if (data.href) {
+            //                 const doglink = `<a href="${data.href}"></a>`
+            //                 document.querySelector(".boxes").innerHTML += doglink;
+        })
     }
-});            //if my keycode is enterKeyCode then it will modify url with(add to) what is in my input
+});
+
+
+
+
+
+
+
+
+
+//if my keycode is enterKeyCode then it will modify url with(add to) what is in my input
 
 
 

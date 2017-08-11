@@ -5,7 +5,13 @@
 .wrapper {
     min-height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
+    justify-content: center;
     margin-top: 75px;
+}
+
+.searchArea {
+    margin: 10px 0;
+    padding: 20px;
 }
 
 input {
@@ -13,19 +19,32 @@ input {
     width: 20%;
 }
 
-.container {
+.container, .boxes, .boxes img, p {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.container {
+    flex: 1 75%;
     padding: 75px 0 0 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.boxes {
+    flex: 1;
+    flex-flow: row wrap;
 }
 
 .boxes img {
-    display: flex;
+    flex-wrap: wrap;
     border: solid;
     justify-content: center;
     height: 10em;
     width: 15em;
-    flex-basis: 23%;
     margin: 30px 12px;
+    flex-basis: 20%;
+}
+
+p {
+    margin: ;
 }
