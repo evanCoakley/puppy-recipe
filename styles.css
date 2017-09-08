@@ -9,6 +9,12 @@
     margin-top: 75px;
 }
 
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
 .searchArea {
     margin: 10px 0;
     padding: 20px;
@@ -19,25 +25,37 @@ input {
     width: 20%;
 }
 
+
+/* img {
+    width: 100px;
+    height: 100px;
+} */
+
 .container, .boxes, .boxes img, p {
     display: flex;
 }
 
 .container {
     flex: 1 75%;
-    padding: 75px 0 0 0;
-    width: 100%;
-    justify-content: center;
+    padding-top: 1em;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 1.35em;
 }
 
 .boxes {
-    flex: 1;
+    border: 1px solid black;
     flex-flow: row wrap;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 17em;
+    width: 17em;
+    padding: 3em;
 }
 
 .boxes img {
     flex-wrap: wrap;
-    border: solid;
     justify-content: center;
     height: 10em;
     width: 15em;
@@ -45,6 +63,14 @@ input {
     flex-basis: 20%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 p {
-    margin: ;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
 }
